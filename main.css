@@ -1,12 +1,17 @@
-#title {
-    background-color:lightgrey;
-    text-align: center;
+header {
+    background-color: lightgrey;
     border-left: solid 6px red;
     border-right: solid 6px red;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    position: sticky;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#title {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 0px;
+    padding: 6px;
+    text-align: center;
 
 }
 
@@ -14,10 +19,7 @@ nav {
     background-color: lightgrey;
     padding: 10px;
     margin-top: 0px;
-    border-left: solid 6px red;
-    border-right: solid 6px red;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    text-align: center;
 }
 
 .nav-link {
@@ -25,7 +27,6 @@ nav {
     margin-left: 3px;
     margin-right: 3px;
     color: darkslategrey;
-    text-align: center;
     text-decoration: none;
 }
 
