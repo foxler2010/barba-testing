@@ -1,0 +1,34 @@
+#title {
+    background-color:lightgrey;
+    text-align: center;
+    border-left: solid 6px red;
+    border-right: solid 6px red;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+
+}
+
+nav {
+    background-color: lightgrey;
+    padding: 10px;
+    margin-top: 0px;
+    border-left: solid 6px red;
+    border-right: solid 6px red;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: darkslategrey;
+    text-align: center;
+    text-decoration: none;
+}
+
+.paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+}
