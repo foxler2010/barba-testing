@@ -35,15 +35,15 @@ nav {
     text-decoration: none;
 }
 
+.nav-link:visited {
+    color: purple;
+}
+
 .nav-link:hover {
     background-color: darkslategrey;
     border: solid 1px darkslategrey;
     border-radius: 6px;
     color: lightgrey;
-}
-
-.nav-link:visited {
-    color: purple;
 }
 
 .paragraph {
