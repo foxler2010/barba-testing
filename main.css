@@ -42,7 +42,7 @@ nav {
     color: lightgrey;
 }
 
-.nav-link:active {
+.nav-link:visited {
     color: purple;
 }
 
