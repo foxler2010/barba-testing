@@ -8,19 +8,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
     </head>
-    <body barba-data="wrapper">
-        <header>
-            <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
-            <nav>
-                <a class="nav-link" href="about.html">about</a>
-                <a class="nav-link" id="examples-link" href="examples.html">examples</a>
-                <a class="nav-link" href="barba-legacy.html">barba-legacy example</a>
-            </nav>
-        </header>
-        <main barba-data="container">
-            <p class="paragraph">Barba.js is a really cool library allowing you to make your site look like a Single Page Application (SPA). Every time you click or interact with something on the page, smooth animations take you around and make everything super smooth and fluid. It is my goal to someday make a really cool website using this technology, but I'm still learning. And this is my playground. Take a look around, it could be boring or cool. I'm not going to update this page every time I add a new thing so come back and see what new animations I've added. Another note is that I am terrible at making decent themes/styles/CSS stuff, so animations might be cool, but I want to keep this site simple so I can focus on the important stuff.</p>
-        </main>
-
+    <body>
+        <div data-barba="wrapper">
+            <div data-barba="container" data-barba-namespace="about">
+                <header>
+                    <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
+                    <nav>
+                        <a class="nav-link" href="about.html">about</a>
+                        <a class="nav-link" href="examples.html">examples</a>
+                        <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
+                    </nav>
+                </header>
+                <p class="paragraph">Barba.js is a really cool library allowing you to make your site look like a Single Page Application (SPA). Every time you click or interact with something on the page, smooth animations take you around and make everything super smooth and fluid. It is my goal to someday make a really cool website using this technology, but I'm still learning. And this is my playground. Take a look around, it could be boring or cool. I'm not going to update this page every time I add a new thing so come back and see what new animations I've added. Another note is that I am terrible at making decent themes/styles/CSS stuff, so animations might be cool, but I want to keep this site simple so I can focus on the important stuff.</p>
+            </div>
+        </div>
 
         <!-- barba/animations stuff -->
         <script src="https://unpkg.com/@barba/core"></script>

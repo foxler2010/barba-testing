@@ -8,19 +8,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
     </head>
-    <body barba-data="wrapper">
-        <header>
-            <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
-            <nav>
-                <a class="nav-link" href="about.html">about</a>
-                <a class="nav-link" id="examples-link" href="examples.html">examples</a>
-                <a class="nav-link" href="barba-legacy.html">barba-legacy example</a>
-            </nav>
-        </header>
-        <main barba-data="container">
-            <p class="paragraph">Welcome to barba-testing, where I am trying to make cool animations on the web!</p>
-        </main>
-
+    <body>
+        <div data-barba="wrapper">
+            <div data-barba="container" data-barba-namespace="home">
+                <header>
+                    <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
+                    <nav>
+                        <a class="nav-link" href="about.html">about</a>
+                        <a class="nav-link" href="examples.html">examples</a>
+                        <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
+                    </nav>
+                </header>
+                <p class="paragraph">Welcome to barba-testing, where I am trying to make cool animations on the web!</p>
+            </div>
+        </div>
 
         <!-- barba/animations stuff -->
         <script src="https://unpkg.com/@barba/core"></script>
