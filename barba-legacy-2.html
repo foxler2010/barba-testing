@@ -6,47 +6,29 @@
   </head>
   <body>
 
-    <!-- define the wrapper and the container -->
+    <!-- wrapper -->
     <div data-barba="wrapper">
+      <header>
+        <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
+        <nav>
+          <a class="nav-link" href="about.html">about</a>
+          <a class="nav-link" href="examples.html">examples</a>
+          <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
+        </nav>
+      </header>
+      <!-- container -->
       <div data-barba="container" data-barba-namespace="legacy-page-2">
-        <header>
-          <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
-          <nav>
-            <a class="nav-link" href="about.html">about</a>
-            <a class="nav-link" href="examples.html">examples</a>
-            <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
-          </nav>
-        </header>
-      <br>
-      <h1>Legacy Example Page 2</h1>
-      <a href="barba-legacy.html">link to page 1</a>
-      <a href="index.html">go home</a>
+        <br>
+        <h1>Legacy Example Page 2</h1>
+        <a href="barba-legacy.html">link to page 1</a>
+        <a href="index.html">go home</a>
+        <!-- end wrapper and container -->
       </div>
     </div>
 
-    <!-- load barba (UMD version) -->
+    <!-- anime -->
     <script src="https://unpkg.com/@barba/core"></script>
-
-    <!-- load gsap animation library (minified version) -->
     <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-
-    <!-- init barba with a simple opacity transition -->
-    <script type="text/javascript">
-      barba.init({
-        transitions: [{
-          name: 'opacity-transition',
-          leave(data) {
-            return gsap.to(data.current.container, {
-              opacity: 0
-            });
-          },
-          enter(data) {
-            return gsap.from(data.next.container, {
-              opacity: 0
-            });
-          }
-        }]
-      });
-    </script>
+    <script src="transitions.js"></script>
   </body>
 </html>
