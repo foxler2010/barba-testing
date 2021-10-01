@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>barba-testing | about</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
-    </head>
-    <body>
-        <div data-barba="wrapper">
-            <div data-barba="container" data-barba-namespace="about">
-                <header>
-                    <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
-                    <nav>
-                        <a class="nav-link" href="about.html">about</a>
-                        <a class="nav-link" href="examples.html">examples</a>
-                        <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
-                    </nav>
-                </header>
-                <p class="paragraph">Barba.js is a really cool library allowing you to make your site look like a Single Page Application (SPA). Every time you click or interact with something on the page, smooth animations take you around and make everything super smooth and fluid. It is my goal to someday make a really cool website using this technology, but I'm still learning. And this is my playground. Take a look around, it could be boring or cool. I'm not going to update this page every time I add a new thing so come back and see what new animations I've added. Another note is that I am terrible at making decent themes/styles/CSS stuff, so animations might be cool, but I want to keep this site simple so I can focus on the important stuff.</p>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <title>barba-testing | about</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div data-barba="wrapper">
+      <header>
+        <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
+        <nav>
+          <a class="nav-link" href="about.html">about</a>
+          <a class="nav-link" href="examples.html">examples</a>
+          <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
+        </nav>
+      </header>
+      <!-- container -->
+      <div data-barba="container" data-barba-namespace="about">
+        <p class="paragraph">Barba.js is a really cool library allowing you to make your site look like a Single Page Application (SPA). Every time you click or interact with something on the page, smooth animations take you around and make everything super smooth and fluid. It is my goal to someday make a really cool website using this technology, but I'm still learning. And this is my playground. Take a look around, it could be boring or cool. I'm not going to update this page every time I add a new thing so come back and see what new animations I've added. Another note is that I am terrible at making decent themes/styles/CSS stuff, so animations might be cool, but I want to keep this site simple so I can focus on the important stuff.</p>
+        <!-- end wrapper and container -->
+      </div>
+    </div>
 
-        <!-- barba/animations stuff -->
-        <script src="https://unpkg.com/@barba/core"></script>
-        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-        <script type="text/javascript">
-            barba.init({
-                transitions: [{
-                    name: 'default-transition',
-                    leave(data) {
-                        return gsap.to(data.current.container, {
-                            opacity: 0
-                        });
-                    },
-                    enter(data) {
-                        return gsap.from(data.next.container, {
-                            opacity: 0
-                        });
-                    }
-                }]
-            });
-        </script>
-    </body>
+    <!-- anime -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="transitions.js"></script>
+  </body>
 </html>
