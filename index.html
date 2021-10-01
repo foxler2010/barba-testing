@@ -1,47 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>barba-testing | home</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
-    </head>
-    <body>
-        <div data-barba="wrapper">
-            <div data-barba="container" data-barba-namespace="home">
-                <header>
-                    <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
-                    <nav>
-                        <a class="nav-link" href="about.html">about</a>
-                        <a class="nav-link" href="examples.html">examples</a>
-                        <a class="nav-link" href="barba-legacy.html">BarbaJS legacy example</a>
-                    </nav>
-                </header>
-                <p class="paragraph">Welcome to barba-testing, where I am trying to make cool animations on the web!</p>
-            </div>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>barba-testing | home</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div data-barba="wrapper">
+      <header>
+        <h1 id="title"><a id="title-link" href="index.html">barba-testing</a></h1>
+        <nav>
+          <a class="nav-link" href="about.html">about</a>
+          <a class="nav-link" href="examples.html">examples</a>
+        </nav>
+      </header>
+      <!-- container -->
+      <div data-barba="container" data-barba-namespace="home">
+        <p class="paragraph">Welcome to barba-testing, where I am trying to make cool animations on the web!</p>
+        <!-- end wrapper and container -->
+      </div>
+    </div>
 
-        <!-- barba/animations stuff -->
-        <script src="https://unpkg.com/@barba/core"></script>
-        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-        <script type="text/javascript">
-            barba.init({
-                transitions: [{
-                    name: 'default-transition',
-                    leave(data) {
-                        return gsap.to(data.current.container, {
-                            opacity: 0
-                        });
-                    },
-                    enter(data) {
-                        return gsap.from(data.next.container, {
-                            opacity: 0
-                        });
-                    }
-                }]
-            });
-        </script>
-    </body>
+    <!-- anime -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="transitions.js"></script>
+  </body>
 </html>
